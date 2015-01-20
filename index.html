@@ -1,17 +1,47 @@
 <html>
+	<head>
+        <title>Scelto e-postsignaturgenerator</title>
+	    <script src="https://code.jquery.com/jquery-2.1.3.min.js" type="text/javascript"></script>
+	</head>
 	<body style="font-size: 8pt; font-family: Helvetica, Arial, Sans-serif;">
 		<div id="signature" style="">
 			<div id="logo" style="float: left; margin-right: 5px; border-right: 1px #c0c0c0 solid; height: 75px;">
-				<img src="images/scelto_signature_logo.png" style="margin-top: 12px;" />
+				<img src="http://www.scelto.no/images/scelto_signature_logo.png" alt="Scelto logo" style="margin-top: 12px;" />
 			</div>
 			<div id="details" style="float: left;">
-				<strong>Herman Crafwurd Svensen</strong><br />
-				Seniorkonsulent<br />
+				<span id="scConsName" style="font-weight: bold;">&lt;navn&gt;</span><br />
+				<span id="scConsTitle">&lt;tittel&gt;</span><br />
 				<br />
-				<strong>T:</strong> +47 977 27 277<br />
-				<strong>E:</strong> <a href="mailto:herman@scelto.no">herman@scelto.no</a><br />
-				<strong>W:</strong> <a href="http://www.scelto.no/">www.scelto.no</a><br />
+				<strong>T:</strong> <span id="scConsPhone">&lt;telefonnummer&gt;</span><br />
+				<strong>E:</strong> <a href="mailto:#" id="scConsEmail">&lt;alias&gt;@scelto.no</a><br />
+				<strong>W:</strong> <a href="#" id="scCompanyWeb">&lt;web&gt;</a><br />
 			</div>
 		</div>	
+	    <script type="text/javascript">
+    	    $(function () {
+    	        var employeeKey = $.url().param('id');
+    	        if (employeeKey != 'undefined') {
+    	            createSignature(employeeKey);
+    	        }
+    	    });
+
+    	    function createSignature(employeeKey) {
+    	        var data = $.getJSON("signaturdata.json", function() {
+    	            var companyInfo = data.firma;
+                    if (data.ansatte != 'undefined' && data.ansatte[employeeKey] != 'undefined') {
+                        var employeeInfo = data.ansatte[employeeKey];
+                        populateSignature(companyInfo, employeeInfo);
+                    }
+    	        });
+    	    }
+
+            function populateSignature(companyInfo, employeeInfo) {
+                $('#scConsName').text(employeeInfo.navn);
+                $('#scConsTitle').text(employeeInfo.tittel);
+                $('#scConsPhone').text(employeeInfo.telefon);
+                $('#scConsEmail').text(employeeInfo.email);
+                $('#scCompanyWeb').text(companyInfo.web.display).href(companyInfo.web.href);
+            }
+    	</script>
 	</body>
 </html>

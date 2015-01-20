@@ -1,0 +1,40 @@
+{
+	"firma": {
+		"navn": "Scelto AS",
+		"web": {
+			"href": "http://www.scelto.no/",
+			"display": "www.scelto.no"
+		}
+		"telefon": "+47 909 69 097",
+		"adresse": {
+			"gateadresse": "Hellerudveien 90 R",
+			"postadresse": "0687 Oslo"
+		}
+	},
+	"ansatte": {
+		"hawken": {
+			"navn": "Håken Stark",
+			"tittel": "Seniorkonsulent",
+			"telefon": "+47 920 66 077",
+			"email": "haaken@scelto.no"
+		},
+		"torrick": {
+			"navn": "Tor Eric Sandvik",
+			"tittel": "Seniorkonsulent",
+			"telefon": "+47 909 69 097",
+			"email": "tor.eric.sandvik@scelto.no"
+		},
+		"herms": {
+			"navn": "Herman Crawfurd Svensen",
+			"tittel": "Seniorkonsulent",
+			"telefon": "+47 977 27 277",
+			"email": "herman@scelto.no"
+		},
+		"kapteincobol": {
+			"navn": "Ole-Tommy Lid-Strand",
+			"tittel": "Seniorkonsulent",
+			"telefon": "+47 412 03 140",
+			"email": "ole.tommy@scelto.no"
+		}
+	}
+}
