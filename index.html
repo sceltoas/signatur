@@ -22,6 +22,7 @@
             var employeeInfo;
             var mailto = 'mailto:';
             var hrefAttribute = 'href';
+			var signatureDataLocation = 'signature_data.json';
 
             $(document).ready(function () {
                 var employeeKey = getUrlParameter('id');
@@ -31,7 +32,7 @@
             });
 
             function createSignature(employeeKey) {
-                $.getJSON("signaturdata.json", function (data) {
+                $.getJSON(signatureDataLocation, function (data) {
                     companyInfo = data.firma;
                     if (data.ansatte != 'undefined' && data.ansatte[employeeKey] != 'undefined') {
                         employeeInfo = data.ansatte[employeeKey];
