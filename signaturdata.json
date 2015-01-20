@@ -1,10 +1,10 @@
 {
 	"firma": {
 		"navn": "Scelto AS",
-		"web": {
+		"website": {
 			"href": "http://www.scelto.no/",
 			"display": "www.scelto.no"
-		}
+		},
 		"telefon": "+47 909 69 097",
 		"adresse": {
 			"gateadresse": "Hellerudveien 90 R",
