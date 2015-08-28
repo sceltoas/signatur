@@ -35,6 +35,24 @@
 			"tittel": "Seniorkonsulent",
 			"telefon": "+47 412 03 140",
 			"email": "ole.tommy@scelto.no"
+		},
+		"xoiram": {
+			"navn": "Marius Gravdal",
+			"tittel": "Seniorkonsulent",
+			"telefon": "+47 971 78 113",
+			"email": "marius@scelto.no"
+		},
+		"tuxbear": {
+			"navn": "Ole-André Riga Johansen",
+			"tittel": "Seniorkonsulent",
+			"telefon": "+47 994 60 685",
+			"email": "ole-andre@scelto.no"
+		},
+		"guz": {
+			"navn": "Gustav André Bilben",
+			"tittel": "Seniorkonsulent",
+			"telefon": "+47 982 19 557",
+			"email": "gustav@scelto.no"
 		}
 	}
 }
