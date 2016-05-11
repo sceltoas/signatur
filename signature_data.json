@@ -2,7 +2,7 @@
 	"firma": {
 		"navn": "Scelto AS",
 		"website": {
-			"href": "http://www.scelto.no/",
+			"href": "http://www.scel.to/?s=sig",
 			"display": "www.scelto.no"
 		},
 		"telefon": "+47 909 69 097",
@@ -53,6 +53,12 @@
 			"tittel": "Seniorkonsulent",
 			"telefon": "+47 982 19 557",
 			"email": "gustav@scelto.no"
+		},
+		"erik": {
+			"navn": "Erik Salhus",
+			"tittel": "Seniorkonsulent",
+			"telefon": "+47 930 58 294",
+			"email": "erik@scelto.no"			
 		}
 	}
 }
