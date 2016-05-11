@@ -14,7 +14,7 @@
                 <strong>W:</strong> <a href="#" id="scCompanyWeb">&lt;website&gt;</a><br />
             </div>
             <div id="logo">
-                <a href="http://www.scelto.no">
+                <a href="#" id="scCompanyLogoLink">
                     <img src="http://www.scelto.no/images/signature-logo-150.png" alt="Scelto logo" style="margin-top: 12px;" />
                 </a>
             </div>
@@ -50,6 +50,7 @@
                 $('#scConsPhone').text(employeeInfo.telefon);
                 $('#scConsEmail').text(employeeInfo.email).attr(hrefAttribute, mailto.concat(employeeInfo.email));
                 $('#scCompanyWeb').text(companyInfo.website.display).attr(hrefAttribute, companyInfo.website.href);
+                $('#scCompanyLogoLink').attr(hrefAttribute, companyInfo.website.href);
             }
 
             function getUrlParameter(param) {
