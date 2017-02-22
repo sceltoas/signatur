@@ -59,6 +59,18 @@
 			"tittel": "Seniorkonsulent",
 			"telefon": "+47 930 58 294",
 			"email": "erik@scelto.no"			
+		},
+		"richard": {
+			"navn": "Richard Rennemo",
+			"tittel": "Seniorkonsulent",
+			"telefon": "+47 917 09 847",
+			"email": "richard@scelto.no"
+		},
+		"ivarni": {
+			"navn": "Ivar Nilsen",
+			"tittel": "Seniorkonsulent",
+			"telefon": "+47 988 66 505",
+			"email": "ivar@scelto.no"
 		}
 	}
 }
